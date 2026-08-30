@@ -22,10 +22,11 @@ h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.12}h1{font-size:cl
 section{padding:85px 0;border-top:1px solid var(--line)}.section-head{max-width:700px;margin-bottom:42px}.section-head h2{font-size:2.5rem;margin:8px 0 14px}.section-head p{color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(14,29,49,.72);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(88,214,255,.35)}.tag{font-size:.76rem;color:var(--accent);font-weight:700;letter-spacing:1px;text-transform:uppercase}.card h3{font-size:1.35rem;margin:10px 0}.card p{color:var(--muted);font-size:.94rem}.metric{display:inline-block;margin-top:12px;color:white;font-weight:700}.project-link{display:inline-block;margin-top:16px;color:var(--accent);text-decoration:none;font-weight:700}
 .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skillbox{padding:25px;background:rgba(14,29,49,.65);border:1px solid var(--line);border-radius:16px}.skillbox h3{margin-top:0}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.84rem}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.cert{background:rgba(14,29,49,.72);border:1px solid var(--line);border-radius:18px;padding:24px}.cert h3{margin:0 0 10px;font-size:1.2rem}.cert p{margin:0;color:var(--muted)}
 .timeline{border-left:1px solid var(--line);padding-left:30px}.item{position:relative;margin-bottom:32px}.item:before{content:"";position:absolute;left:-36px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--accent)}.item h3{margin:0}.meta{color:var(--accent);font-size:.9rem;font-weight:700}.item p{color:var(--muted);margin:8px 0}
 .contact{padding:90px 0;text-align:center}.contact h2{font-size:clamp(2.4rem,5vw,4rem);margin-bottom:15px}.contact p{color:var(--muted);font-size:1.1rem}.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
 footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem;text-align:center}
-@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:70px}.grid{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.links{display:none}h1{letter-spacing:-2px}}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:70px}.grid,.cert-grid{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.links{display:none}h1{letter-spacing:-2px}}
 </style>
 </head>
 <body>
@@ -37,11 +38,11 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 <p>AI and Data Science graduate focused on Machine Learning, Generative AI, Computer Vision, Automation, Robotics, and data-driven systems. I combine research, engineering, and practical business applications to build technology that creates measurable impact.</p>
 <div class="buttons">
   <a class="btn primary" href="#projects">View My Work</a>
-  <a class="btn secondary" id="cv-link" href="assets/Mohammad H. CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+  <a class="btn secondary" id="cv-link" href="Mohammad H. CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
   <a class="btn secondary" href="mailto:mohammedrami2003@gmail.com">Get in Touch</a>
 </div>
 </div>
-<aside class="profile"><img id="profile-image" class="profile-photo" src="assets/profile-photo.jpg" alt="Mohammad Hafez" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><div class="initials">MH</div><h3>Mohammad Hafez</h3><p>AI • Machine Learning • Automation</p>
+<aside class="profile"><img id="profile-image" class="profile-photo" src="profile-photo.jpeg" alt="Mohammad Hafez" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><div class="initials">MH</div><h3>Mohammad Hafez</h3><p>AI • Machine Learning • Automation</p>
 <div class="stat"><span>Location</span><strong>Doha, Qatar</strong></div>
 <div class="stat"><span>Focus</span><strong>Applied AI & Research</strong></div>
 <div class="stat"><span>Background</span><strong>Data Science & AI</strong></div></aside>
@@ -58,7 +59,14 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 <div class="grid">
 <div class="card"><div class="tag">Medical AI</div><h3>DDH Literature Review</h3><p>Structured research into AI and ML methods for Developmental Dysplasia of the Hip diagnosis, including methodology comparison, literature synthesis, and identification of research gaps.</p></div>
 <div class="card"><div class="tag">Big Data</div><h3>Web Analytics</h3><p>Processed more than 1,000 web pages using Hadoop MapReduce to analyze traffic, calculate conversion rates, and evaluate hyperlink importance using PageRank.</p></div>
+<div class="card"><div class="tag">Computer Vision</div><h3>Fruit Vision</h3><p>Developed a robotic vision pipeline using ROS 2, MoveIt 2, Python, and OpenCV for autonomous fruit detection and classification, demonstrating applied computer vision in robotics and intelligent sorting.</p></div>
+</div></div></section>
 
+<section id="certifications"><div class="container"><div class="section-head"><div class="eyebrow">Certifications</div><h2>Professional Certifications</h2></div>
+<div class="cert-grid">
+<div class="cert"><h3>Google AI Essentials</h3><p>Completed practical training in foundational AI concepts, prompt design, and real-world AI workflows.</p></div>
+<div class="cert"><h3>IBM AI Fundamentals</h3><p>Studied the fundamentals of artificial intelligence, machine learning, and responsible AI application principles.</p></div>
+<div class="cert"><h3>LinkedIn Learning — Python for Data Science</h3><p>Developed core data science skills in Python, analytics, and practical exploratory data work.</p></div>
 </div></div></section>
 
 <section id="experience"><div class="container"><div class="section-head"><div class="eyebrow">Career</div><h2>Experience</h2></div>
@@ -88,9 +96,9 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 <footer><div class="container">© 2026 Mohammad Hafez · Data Science & Artificial Intelligence</div></footer>
 <script>
   const portfolioConfig = {
-    profileImage: 'assets/profile-photo.jpg',
-    fallbackProfileImage: 'profile-photo.jpeg',
-    cvUrl: 'assets/Mohammad H. CV.pdf'
+    profileImage: 'profile-photo.jpeg',
+    fallbackProfileImage: 'assets/profile-photo.jpg',
+    cvUrl: 'Mohammad H. CV.pdf'
   };
 
   const profileImage = document.getElementById('profile-image');
