@@ -3,113 +3,328 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohammad Hafez | AI & Data Science Portfolio</title>
+<title>Mohammad Hafez | AI & Data Science</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07111f;--bg2:#0b1728;--card:#0e1d31;--line:rgba(255,255,255,.09);--text:#f4f7fb;--muted:#a8b4c4;--accent:#58d6ff;--accent2:#7c8cff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 75% 10%,rgba(88,214,255,.11),transparent 27%),radial-gradient(circle at 15% 55%,rgba(124,140,255,.08),transparent 25%);z-index:-1}
-.container{width:min(1120px,90%);margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Space Grotesk";font-weight:700;font-size:1.1rem}.brand span{color:var(--accent)}
-.links{display:flex;gap:24px}.links a{color:var(--muted);text-decoration:none;font-size:.92rem}.links a:hover{color:white}
-.hero{padding:105px 0 85px;display:grid;grid-template-columns:1.45fr .75fr;gap:60px;align-items:center}.eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
-h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.12}h1{font-size:clamp(3rem,7vw,5.8rem);margin:14px 0 20px;letter-spacing:-3px}h1 .grad{background:linear-gradient(90deg,var(--accent),#a8b4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{font-size:1.12rem;color:var(--muted);max-width:690px}.buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:700;border:1px solid var(--line);color:white}.btn.primary{background:linear-gradient(90deg,#168bb5,#5969e7);border:0}.btn.secondary{background:rgba(255,255,255,.03)}
-.profile{background:linear-gradient(145deg,rgba(88,214,255,.13),rgba(124,140,255,.08));border:1px solid var(--line);padding:28px;border-radius:24px}.profile-photo{width:100%;max-width:260px;height:340px;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.12);display:block;box-shadow:0 12px 30px rgba(0,0,0,.18)}.profile .initials{width:76px;height:76px;border-radius:20px;display:none;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#07111f;font-family:"Space Grotesk";font-weight:700;font-size:1.7rem}.profile h3{font-size:1.5rem;margin:20px 0 6px}.profile p{font-size:.95rem}.stat{padding:14px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted)}.stat strong{color:white}
-section{padding:85px 0;border-top:1px solid var(--line)}.section-head{max-width:700px;margin-bottom:42px}.section-head h2{font-size:2.5rem;margin:8px 0 14px}.section-head p{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(14,29,49,.72);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(88,214,255,.35)}.tag{font-size:.76rem;color:var(--accent);font-weight:700;letter-spacing:1px;text-transform:uppercase}.card h3{font-size:1.35rem;margin:10px 0}.card p{color:var(--muted);font-size:.94rem}.metric{display:inline-block;margin-top:12px;color:white;font-weight:700}.project-link{display:inline-block;margin-top:16px;color:var(--accent);text-decoration:none;font-weight:700}
-.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skillbox{padding:25px;background:rgba(14,29,49,.65);border:1px solid var(--line);border-radius:16px}.skillbox h3{margin-top:0}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.84rem}
-.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.cert{background:rgba(14,29,49,.72);border:1px solid var(--line);border-radius:18px;padding:24px}.cert h3{margin:0 0 10px;font-size:1.2rem}.cert p{margin:0;color:var(--muted)}
-.timeline{border-left:1px solid var(--line);padding-left:30px}.item{position:relative;margin-bottom:32px}.item:before{content:"";position:absolute;left:-36px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--accent)}.item h3{margin:0}.meta{color:var(--accent);font-size:.9rem;font-weight:700}.item p{color:var(--muted);margin:8px 0}
-.contact{padding:90px 0;text-align:center}.contact h2{font-size:clamp(2.4rem,5vw,4rem);margin-bottom:15px}.contact p{color:var(--muted);font-size:1.1rem}.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
-footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem;text-align:center}
-@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:70px}.grid,.cert-grid{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.links{display:none}h1{letter-spacing:-2px}}
+:root{
+  --bg:#0a0d12;
+  --panel:#10151c;
+  --panel2:#0d1218;
+  --line:rgba(233,240,247,.09);
+  --line-strong:rgba(233,240,247,.16);
+  --text:#eef2f7;
+  --muted:#8b96a5;
+  --muted-dim:#5f6a78;
+  --amber:#e2a24a;
+  --amber-dim:#8a6a3c;
+  --slate:#5c85ab;
+  --ok:#6fae8a;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Inter",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:16px}
+h1,h2,h3{font-family:"Sora",sans-serif}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+/* faint schematic grid, not a gradient blob */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background-image:
+    linear-gradient(rgba(233,240,247,.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(233,240,247,.028) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 80% 60% at 60% 0%, black 15%, transparent 75%);
+}
+
+.container{width:min(1080px,90%);margin:auto}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:30;background:rgba(10,13,18,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;font-size:1rem;letter-spacing:.2px}
+.brand .dot{color:var(--amber)}
+.links{display:flex;gap:28px}
+.links a{color:var(--muted);text-decoration:none;font-size:.87rem;font-weight:500;letter-spacing:.2px}
+.links a:hover{color:var(--text)}
+.status-chip{display:flex;align-items:center;gap:7px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ok);border:1px solid rgba(111,174,138,.35);background:rgba(111,174,138,.08);padding:6px 12px;border-radius:999px}
+.status-chip .pulse{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(111,174,138,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(111,174,138,.5)}70%{box-shadow:0 0 0 7px rgba(111,174,138,0)}100%{box-shadow:0 0 0 0 rgba(111,174,138,0)}}
+
+/* ---------- hero ---------- */
+.hero{padding:88px 0 70px;display:grid;grid-template-columns:1.35fr .8fr;gap:56px;align-items:start}
+.eyebrow{color:var(--amber);font-family:"IBM Plex Mono",monospace;font-weight:500;text-transform:uppercase;letter-spacing:2.5px;font-size:.74rem;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--amber-dim)}
+h1{font-size:clamp(2.5rem,4.6vw,3.6rem);margin:16px 0 22px;letter-spacing:-1.3px;font-weight:700;color:var(--text);max-width:16ch}
+h1 em{font-style:normal;color:var(--amber)}
+.hero-lede{font-size:1.06rem;color:var(--muted);max-width:600px;margin-bottom:30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 20px;border-radius:9px;text-decoration:none;font-weight:600;font-size:.92rem;border:1px solid var(--line-strong);color:var(--text);transition:.18s;display:inline-flex;align-items:center;gap:8px}
+.btn.primary{background:var(--amber);border-color:var(--amber);color:#1a1206}
+.btn.primary:hover{background:#eeb464}
+.btn.secondary{background:transparent}
+.btn.secondary:hover{border-color:var(--muted);background:rgba(255,255,255,.03)}
+
+/* readout card replaces the old avatar+stat block */
+.readout{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.readout-top{display:flex;gap:16px;align-items:center;padding:22px;border-bottom:1px solid var(--line)}
+.profile-photo{width:64px;height:64px;object-fit:cover;border-radius:10px;border:1px solid var(--line-strong);flex-shrink:0}
+.initials{width:64px;height:64px;border-radius:10px;display:none;place-items:center;background:linear-gradient(150deg,var(--amber),#8a6a3c);color:#1a1206;font-family:"Sora";font-weight:700;font-size:1.25rem;flex-shrink:0}
+.readout-top h3{margin:0 0 3px;font-size:1.05rem}
+.readout-top p{margin:0;color:var(--muted);font-size:.85rem}
+.readout-rows{padding:6px 22px 18px}
+.rrow{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.86rem}
+.rrow:last-child{border-bottom:0}
+.rrow span{color:var(--muted-dim);font-family:"IBM Plex Mono",monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.6px}
+.rrow strong{color:var(--text);font-weight:500;text-align:right}
+
+/* ---------- sections ---------- */
+section{padding:76px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.section-head h2{font-size:1.9rem;margin:6px 0 0;letter-spacing:-.5px}
+.section-head p{color:var(--muted);max-width:480px;margin:6px 0 0;font-size:.94rem}
+.section-num{font-family:"IBM Plex Mono",monospace;color:var(--muted-dim);font-size:.78rem}
+
+/* project / research cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.2s border-color,.2s transform}
+.card:hover{border-color:var(--amber-dim);transform:translateY(-3px)}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--amber);font-weight:500;letter-spacing:1px;text-transform:uppercase}
+.card h3{font-size:1.15rem;margin:12px 0 8px;letter-spacing:-.2px}
+.card p{color:var(--muted);font-size:.9rem;margin:0 0 14px}
+.metric{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--ok);border-top:1px solid var(--line);padding-top:12px;width:100%}
+.project-link{display:inline-flex;align-items:center;gap:5px;margin-top:14px;color:var(--text);text-decoration:none;font-weight:600;font-size:.86rem;border-bottom:1px solid var(--amber-dim);padding-bottom:2px}
+.project-link:hover{color:var(--amber)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skillbox{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius)}
+.skillbox h3{margin:0 0 14px;font-size:1.02rem;display:flex;align-items:center;gap:9px}
+.skillbox h3::before{content:"";width:7px;height:7px;background:var(--amber);border-radius:2px;flex-shrink:0}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:6px 11px;border:1px solid var(--line-strong);border-radius:6px;color:var(--muted);font-size:.81rem;font-family:"IBM Plex Mono",monospace}
+
+/* certifications */
+.cert-list{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.cert{background:var(--panel2);padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.cert h3{margin:0 0 6px;font-size:1.04rem}
+.cert .issuer{color:var(--muted);font-size:.86rem;margin:0}
+.cert-progress{text-align:right}
+.cert-progress .frac{font-family:"IBM Plex Mono",monospace;color:var(--amber);font-weight:600;font-size:.95rem}
+.cert-progress .bar{width:120px;height:5px;border-radius:3px;background:rgba(255,255,255,.08);margin-top:8px;overflow:hidden}
+.cert-progress .bar i{display:block;height:100%;background:var(--amber);width:44%}
+.cert-courses{grid-column:1/-1;color:var(--muted-dim);font-size:.82rem;line-height:1.9;border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+
+/* experience timeline */
+.timeline{display:flex;flex-direction:column}
+.item{display:grid;grid-template-columns:130px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.meta{font-family:"IBM Plex Mono",monospace;color:var(--amber);font-size:.8rem;padding-top:2px}
+.item h3{margin:0 0 8px;font-size:1.08rem}
+.item h3 small{display:block;color:var(--muted);font-weight:400;font-size:.85rem;margin-top:3px;font-family:"Inter"}
+.item p{color:var(--muted);margin:0;font-size:.92rem;max-width:60ch}
+
+/* contact */
+.contact{padding:90px 0 70px;text-align:center;border-top:1px solid var(--line)}
+.contact .eyebrow{justify-content:center}
+.contact .eyebrow::before{display:none}
+.contact h2{font-size:clamp(2rem,4.4vw,3rem);margin:14px 0 12px;letter-spacing:-1px}
+.contact p{color:var(--muted);font-size:1.02rem;max-width:480px;margin:auto}
+.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted-dim);font-size:.82rem;text-align:center;font-family:"IBM Plex Mono",monospace}
+
+@media(max-width:850px){
+  .hero{grid-template-columns:1fr;padding-top:56px}
+  .grid,.skills{grid-template-columns:1fr}
+  .links{display:none}
+  .item{grid-template-columns:1fr;gap:6px}
+  .cert{grid-template-columns:1fr}
+  .cert-progress{text-align:left}
+  .cert-progress .bar{width:100%}
+}
 </style>
 </head>
 <body>
-<nav><div class="container nav"><div class="brand">MOHAMMAD <span>HAFEZ</span></div><div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="container nav">
+  <div class="brand">MOHAMMAD<span class="dot">.</span>HAFEZ</div>
+  <div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#certifications">Certifications</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  <div class="status-chip"><span class="pulse"></span>OPEN TO WORK</div>
+</div></nav>
 
 <main>
 <div class="container hero" id="about">
-<div><div class="eyebrow">Data Science & Artificial Intelligence</div><h1>Building <span class="grad">Intelligent Systems</span> for Real-World Problems.</h1>
-<p>AI and Data Science graduate focused on Machine Learning, Generative AI, Computer Vision, Automation, Robotics, and data-driven systems. I combine research, engineering, and practical business applications to build technology that creates measurable impact.</p>
-<div class="buttons">
-  <a class="btn primary" href="#projects">View My Work</a>
-  <a class="btn secondary" id="cv-link" href="Mohammad H. CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
-  <a class="btn secondary" href="mailto:mohammedrami2003@gmail.com">Get in Touch</a>
+  <div>
+    <div class="eyebrow">Data Science &amp; Artificial Intelligence</div>
+    <h1>Applied AI systems, from research to <em>working software</em>.</h1>
+    <p class="hero-lede">I build machine learning, generative AI, and computer vision systems that hold up in production — spanning automated data pipelines, LLM applications, and robotics. My background pairs formal AI/DS training with hands-on delivery across logistics, sales engineering, and applied research.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View my work →</a>
+      <a class="btn secondary" id="cv-link" href="Mohammad H. CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+      <a class="btn secondary" href="mailto:mohammedrami2003@gmail.com">Get in touch</a>
+    </div>
+  </div>
+  <aside class="readout">
+    <div class="readout-top">
+      <img id="profile-image" class="profile-photo" src="profile-photo.jpeg" alt="Mohammad Hafez" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+      <div class="initials">MH</div>
+      <div>
+        <h3>Mohammad Hafez</h3>
+        <p>AI &amp; Data Science, B.Sc.</p>
+      </div>
+    </div>
+    <div class="readout-rows">
+      <div class="rrow"><span>Location</span><strong>Doha, Qatar</strong></div>
+      <div class="rrow"><span>Focus</span><strong>Applied AI &amp; Automation</strong></div>
+      <div class="rrow"><span>Currently</span><strong>Skyetron IT Consultancy</strong></div>
+      <div class="rrow"><span>Stack</span><strong>Python · PyTorch · LangChain</strong></div>
+    </div>
+  </aside>
 </div>
-</div>
-<aside class="profile"><img id="profile-image" class="profile-photo" src="profile-photo.jpeg" alt="Mohammad Hafez" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><div class="initials">MH</div><h3>Mohammad Hafez</h3><p>AI • Machine Learning • Automation</p>
-<div class="stat"><span>Location</span><strong>Doha, Qatar</strong></div>
-<div class="stat"><span>Focus</span><strong>Applied AI & Research</strong></div>
-<div class="stat"><span>Background</span><strong>Data Science & AI</strong></div></aside>
-</div>
 
-<section id="projects"><div class="container"><div class="section-head"><div class="eyebrow">Selected Work</div><h2>Featured Projects</h2><p>Practical AI, automation, and intelligent systems developed across logistics, machine learning, and robotics.</p></div>
-<div class="grid">
-<article class="card"><div class="tag">Automation • Logistics</div><h3>Live Shipment Tracking</h3><p>A fully automated container-tracking system that extracts shipping data from multiple portals, normalizes inconsistent terminal data, and stores operational information in PostgreSQL for analytics.</p><span class="metric">500+ containers tracked daily</span><br><a class="project-link" href="https://github.com/mohammed-1410/Live-Shipment-tracking" target="_blank">View Project ↗</a></article>
-<article class="card"><div class="tag">Machine Learning • Full Stack</div><h3>AutoML Secure Platform</h3><p>An end-to-end platform enabling non-experts to upload datasets, automatically detect problem types, benchmark models, inspect results, and download predictions.</p><span class="metric">~70% faster model workflow</span><br><a class="project-link" href="https://github.com/mohammed-1410/Auto-ML" target="_blank">View Project ↗</a></article>
-<article class="card"><div class="tag">Computer Vision • Robotics</div><h3>Fruit Vision</h3><p>An autonomous robotic fruit-sorting system integrating Python and OpenCV with ROS 2, MoveIt 2, and a UR3 robotic manipulator.</p><span class="metric">92% detection accuracy</span><br><a class="project-link" href="https://github.com/mohammed-1410/Fruit-Vision" target="_blank">View Project ↗</a></article>
-</div></div></section>
+<section id="projects"><div class="container">
+  <div class="section-head">
+    <div><div class="section-num mono">01 / SELECTED WORK</div><h2>Featured Projects</h2><p>Practical AI, automation, and intelligent systems built for logistics, machine learning, and robotics.</p></div>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">Automation · Logistics</div>
+      <h3>Live Shipment Tracking</h3>
+      <p>Automated container-tracking system that extracts shipping data from multiple carrier portals, normalizes inconsistent terminal data, and stores operational data in PostgreSQL for analytics.</p>
+      <span class="metric">→ 500+ containers tracked daily</span>
+      <br><a class="project-link" href="https://github.com/mohammed-1410/Live-Shipment-tracking" target="_blank">View project ↗</a>
+    </article>
+    <article class="card">
+      <div class="tag">Machine Learning · Full Stack</div>
+      <h3>AutoML Secure Platform</h3>
+      <p>End-to-end platform that lets non-experts upload datasets, auto-detects the problem type, benchmarks models, and returns predictions — no ML background required.</p>
+      <span class="metric">→ ~70% faster model workflow</span>
+      <br><a class="project-link" href="https://github.com/mohammed-1410/Auto-ML" target="_blank">View project ↗</a>
+    </article>
+    <article class="card">
+      <div class="tag">Computer Vision · Robotics</div>
+      <h3>Fruit Vision</h3>
+      <p>Autonomous robotic fruit-sorting system integrating Python and OpenCV with ROS 2, MoveIt 2, and a UR3 robotic manipulator for real-time detection and pick-and-place.</p>
+      <span class="metric">→ 92% detection accuracy</span>
+      <br><a class="project-link" href="https://github.com/mohammed-1410/Fruit-Vision" target="_blank">View project ↗</a>
+    </article>
+  </div>
+</div></section>
 
-<section><div class="container"><div class="section-head"><div class="eyebrow">Research</div><h2>Research & Academic Work</h2></div>
-<div class="grid">
-<div class="card"><div class="tag">Medical AI</div><h3>DDH Literature Review</h3><p>Structured research into AI and ML methods for Developmental Dysplasia of the Hip diagnosis, including methodology comparison, literature synthesis, and identification of research gaps.</p></div>
-<div class="card"><div class="tag">Big Data</div><h3>Web Analytics</h3><p>Processed more than 1,000 web pages using Hadoop MapReduce to analyze traffic, calculate conversion rates, and evaluate hyperlink importance using PageRank.</p></div>
-<div class="card"><div class="tag">Computer Vision</div><h3>Fruit Vision</h3><p>Developed a robotic vision pipeline using ROS 2, MoveIt 2, Python, and OpenCV for autonomous fruit detection and classification, demonstrating applied computer vision in robotics and intelligent sorting.</p></div>
-</div></div></section>
+<section id="research"><div class="container">
+  <div class="section-head">
+    <div><div class="section-num mono">02 / ACADEMIC WORK</div><h2>Research</h2><p>Structured research work outside coursework, spanning medical AI and large-scale data analysis.</p></div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="tag">Medical AI</div>
+      <h3>DDH Literature Review</h3>
+      <p>Structured research into AI and ML methods for diagnosing Developmental Dysplasia of the Hip — methodology comparison, literature synthesis, and identification of open research gaps.</p>
+    </div>
+    <div class="card">
+      <div class="tag">Big Data</div>
+      <h3>Web Analytics at Scale</h3>
+      <p>Processed 1,000+ web pages with Hadoop MapReduce to analyze traffic, compute conversion rates, and rank hyperlink importance using PageRank.</p>
+    </div>
+    <div class="card">
+      <div class="tag">Computer Vision</div>
+      <h3>Fruit Vision — Vision Pipeline</h3>
+      <p>The research side of the robotic sorting project: designing and validating the ROS 2 / OpenCV detection pipeline that drives the manipulator's pick-and-place decisions.</p>
+    </div>
+  </div>
+</div></section>
 
-<section id="certifications"><div class="container"><div class="section-head"><div class="eyebrow">Certifications</div><h2>Professional Certifications</h2></div>
-<div class="cert-grid">
-<div class="cert"><h3>IBM Generative AI Engineering Professional Certificate</h3><p>IBM / Coursera<br>2025 – present | 7 of 16 courses completed</p><p style="margin-top:10px;">• Introduction to Artificial Intelligence (AI)<br>• Generative AI: Introduction and Applications<br>• Generative AI: Prompt Engineering Basics<br>• Python for Data Science, AI &amp; Development<br>• Developing AI Applications with Python and Flask<br>• Building Generative AI-Powered Applications with Python (LLMs, RAG, LangChain, Hugging Face)<br>• Data Analysis with Python</p></div>
-</div></div></section>
+<section id="certifications"><div class="container">
+  <div class="section-head">
+    <div><div class="section-num mono">03 / CREDENTIALS</div><h2>Certifications</h2><p>Ongoing formal training in generative AI engineering.</p></div>
+  </div>
+  <div class="cert-list">
+    <div class="cert">
+      <div>
+        <h3>IBM Generative AI Engineering — Professional Certificate</h3>
+        <p class="issuer">IBM / Coursera · 2025 – present</p>
+      </div>
+      <div class="cert-progress">
+        <div class="frac">7 / 16 courses</div>
+        <div class="bar"><i></i></div>
+      </div>
+      <div class="cert-courses">
+        Introduction to Artificial Intelligence (AI) · Generative AI: Introduction and Applications · Generative AI: Prompt Engineering Basics · Python for Data Science, AI &amp; Development · Developing AI Applications with Python and Flask · Building Generative AI-Powered Applications with Python (LLMs, RAG, LangChain, Hugging Face) · Data Analysis with Python
+      </div>
+    </div>
+  </div>
+</div></section>
 
-<section id="experience"><div class="container"><div class="section-head"><div class="eyebrow">Career</div><h2>Experience</h2></div>
-<div class="timeline">
-<div class="item"><div class="meta">2026 — Present</div><h3>Technical Pre-Sales Engineer · Skyetron</h3><p>Evaluating technical requirements, translating business needs into practical AI and IT solutions, and supporting client communication and solution assessment.</p></div>
-<div class="item"><div class="meta">2025 — 2026</div><h3>AI & Automation Engineer Intern · Transmed</h3><p>Built automation workflows for logistics operations, shipment tracking, structured databases, and Power BI reporting.</p></div>
-<div class="item"><div class="meta">2025 — 2026</div><h3>AI Trainer · Doha, Qatar</h3><p>Delivered practical training in Python and Artificial Intelligence, designing hands-on learning experiences for professional learners.</p></div>
-</div></div></section>
+<section id="experience"><div class="container">
+  <div class="section-head">
+    <div><div class="section-num mono">04 / CAREER</div><h2>Experience</h2></div>
+  </div>
+  <div class="timeline">
+    <div class="item">
+      <div class="meta">2026 — Present</div>
+      <div>
+        <h3>Junior Technical Pre-Sales Engineer<small>Skyetron IT Consultancy · Doha</small></h3>
+        <p>Evaluate technical requirements, translate business needs into practical AI and IT solutions, and support client communication and solution assessment across multiple active accounts.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="meta">2025 — 2026</div>
+      <div>
+        <h3>AI & Automation Engineer Intern<small>Transmed</small></h3>
+        <p>Built automation workflows for logistics operations and shipment tracking, structured supporting databases, and delivered Power BI reporting for operational visibility.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="meta">2025 — 2026</div>
+      <div>
+        <h3>AI Trainer<small>Arab Academy &amp; Alathar Company · Doha</small></h3>
+        <p>Delivered practical training in Python and Artificial Intelligence, designing hands-on curricula and exercises for professional learners with varying technical backgrounds.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
 
-<section id="skills"><div class="container"><div class="section-head"><div class="eyebrow">Expertise</div><h2>Technical Skills</h2></div>
-<div class="skills">
-<div class="skillbox"><h3>AI & Machine Learning</h3><div class="chips"><span class="chip">Python</span><span class="chip">Scikit-learn</span><span class="chip">XGBoost</span><span class="chip">LightGBM</span><span class="chip">PyTorch</span><span class="chip">Keras</span><span class="chip">Deep Learning</span></div></div>
-<div class="skillbox"><h3>Generative AI & LLMs</h3><div class="chips"><span class="chip">LangChain</span><span class="chip">RAG</span><span class="chip">Hugging Face</span><span class="chip">Prompt Engineering</span><span class="chip">LLM Applications</span></div></div>
-<div class="skillbox"><h3>Data & Computer Vision</h3><div class="chips"><span class="chip">OpenCV</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">SciPy</span><span class="chip">Data Visualization</span></div></div>
-<div class="skillbox"><h3>Software & Robotics</h3><div class="chips"><span class="chip">FastAPI</span><span class="chip">Flask</span><span class="chip">PostgreSQL</span><span class="chip">SQLAlchemy</span><span class="chip">ROS 2</span><span class="chip">MoveIt 2</span><span class="chip">Selenium</span><span class="chip">Power BI</span></div></div>
-</div></div></section>
+<section id="skills"><div class="container">
+  <div class="section-head">
+    <div><div class="section-num mono">05 / TOOLKIT</div><h2>Technical Skills</h2></div>
+  </div>
+  <div class="skills">
+    <div class="skillbox"><h3>AI &amp; Machine Learning</h3><div class="chips"><span class="chip">Python</span><span class="chip">Scikit-learn</span><span class="chip">XGBoost</span><span class="chip">LightGBM</span><span class="chip">PyTorch</span><span class="chip">Keras</span><span class="chip">Deep Learning</span></div></div>
+    <div class="skillbox"><h3>Generative AI &amp; LLMs</h3><div class="chips"><span class="chip">LangChain</span><span class="chip">RAG</span><span class="chip">Hugging Face</span><span class="chip">Prompt Engineering</span><span class="chip">LLM Applications</span></div></div>
+    <div class="skillbox"><h3>Data &amp; Computer Vision</h3><div class="chips"><span class="chip">OpenCV</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">SciPy</span><span class="chip">Data Visualization</span></div></div>
+    <div class="skillbox"><h3>Software &amp; Robotics</h3><div class="chips"><span class="chip">FastAPI</span><span class="chip">Flask</span><span class="chip">PostgreSQL</span><span class="chip">SQLAlchemy</span><span class="chip">ROS 2</span><span class="chip">MoveIt 2</span><span class="chip">Selenium</span><span class="chip">Power BI</span></div></div>
+  </div>
+</div></section>
 
-<section class="contact" id="contact"><div class="container"><div class="eyebrow">Let's Connect</div><h2>Interested in working together?</h2><p>Open to AI, Machine Learning, research, automation, computer vision, and data-driven technology opportunities.</p>
-<div class="contact-links">
-<a class="btn primary" href="mailto:mohammedrami2003@gmail.com">Email Me</a>
-<a class="btn" href="tel:+97455733991">+974 5573 3991</a>
-<a class="btn" href="https://www.linkedin.com/in/mohammad-hafez-a2943b299" target="_blank">LinkedIn</a>
-<a class="btn" href="https://github.com/mohammed-1410" target="_blank">GitHub</a>
-<a class="btn" href="https://www.credly.com/users/mohammed-hafez.fcba53a2" target="_blank">Credly</a>
-</div></div></section>
+<section class="contact" id="contact"><div class="container">
+  <div class="eyebrow">Let's connect</div>
+  <h2>Interested in working together?</h2>
+  <p>Open to AI, machine learning, research, automation, and computer-vision opportunities.</p>
+  <div class="contact-links">
+    <a class="btn primary" href="mailto:mohammedrami2003@gmail.com">Email me</a>
+    <a class="btn secondary" href="tel:+97455733991">+974 5573 3991</a>
+    <a class="btn secondary" href="https://www.linkedin.com/in/mohammad-hafez-a2943b299" target="_blank">LinkedIn</a>
+    <a class="btn secondary" href="https://github.com/mohammed-1410" target="_blank">GitHub</a>
+    <a class="btn secondary" href="https://www.credly.com/users/mohammed-hafez.fcba53a2" target="_blank">Credly</a>
+  </div>
+</div></section>
 </main>
-<footer><div class="container">© 2026 Mohammad Hafez · Data Science & Artificial Intelligence</div></footer>
+<footer><div class="container">© 2026 Mohammad Hafez — Data Science &amp; Artificial Intelligence</div></footer>
+
 <script>
   const portfolioConfig = {
     profileImage: 'profile-photo.jpeg',
     fallbackProfileImage: 'assets/profile-photo.jpg',
     cvUrl: 'Mohammad H. CV.pdf'
   };
-
   const profileImage = document.getElementById('profile-image');
   const cvLink = document.getElementById('cv-link');
-
-  if (cvLink) {
-    cvLink.href = portfolioConfig.cvUrl;
-  }
-
+  if (cvLink) cvLink.href = portfolioConfig.cvUrl;
   if (profileImage) {
     const candidateUrls = [portfolioConfig.profileImage, portfolioConfig.fallbackProfileImage];
     let currentIndex = 0;
-
     const tryLoadImage = () => {
       if (currentIndex >= candidateUrls.length) {
         profileImage.style.display = 'none';
@@ -117,21 +332,16 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
         if (fallback) fallback.style.display = 'grid';
         return;
       }
-
       profileImage.src = candidateUrls[currentIndex];
-      profileImage.onerror = () => {
-        currentIndex += 1;
-        tryLoadImage();
-      };
+      profileImage.onerror = () => { currentIndex += 1; tryLoadImage(); };
       profileImage.onload = () => {
         profileImage.style.display = 'block';
         const fallback = profileImage.nextElementSibling;
         if (fallback) fallback.style.display = 'none';
       };
     };
-
     tryLoadImage();
   }
 </script>
-</body></html>
-
+</body>
+</html>
