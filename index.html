@@ -49,9 +49,6 @@ nav{position:sticky;top:0;z-index:30;background:rgba(10,13,18,.86);backdrop-filt
 .links{display:flex;gap:28px}
 .links a{color:var(--muted);text-decoration:none;font-size:.87rem;font-weight:500;letter-spacing:.2px}
 .links a:hover{color:var(--text)}
-.status-chip{display:flex;align-items:center;gap:7px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ok);border:1px solid rgba(111,174,138,.35);background:rgba(111,174,138,.08);padding:6px 12px;border-radius:999px}
-.status-chip .pulse{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(111,174,138,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(111,174,138,.5)}70%{box-shadow:0 0 0 7px rgba(111,174,138,0)}100%{box-shadow:0 0 0 0 rgba(111,174,138,0)}}
 
 /* ---------- hero ---------- */
 .hero{padding:88px 0 70px;display:grid;grid-template-columns:1.35fr .8fr;gap:56px;align-items:start}
@@ -151,7 +148,6 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted-dim);fo
 <nav><div class="container nav">
   <div class="brand">MOHAMMAD<span class="dot">.</span>HAFEZ</div>
   <div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#certifications">Certifications</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
-  <div class="status-chip"><span class="pulse"></span>OPEN TO WORK</div>
 </div></nav>
 
 <main>
